@@ -22,13 +22,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Ads Blocker Detection Bypass",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Bypass the detection of Ad Blocker on YT",
+    image: "/projects/yt-ads.png",
+    tags: ["TypeScript", "Chrome", "Firefox"],
+    demoUrl: "https://github.com/av109/ad-detection-bypass",
+    githubUrl: "https://github.com/av109/ad-detection-bypass",
   },
 ];
 
