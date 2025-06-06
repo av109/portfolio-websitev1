@@ -1,18 +1,8 @@
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitch,
-  Twitter,
-} from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import { FaGithub } from "react-icons/fa";
-import { LiaLinkedin, LiaLinkedinIn } from "react-icons/lia";
+
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 
 export const ContactSection = () => {
@@ -20,7 +10,7 @@ export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();x
 
     setIsSubmitting(true);
 
@@ -59,7 +49,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium text-left"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:aayushvyas2014@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     aayushvyas2014@gmail.com
@@ -96,8 +86,11 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="https://www.linkedin.com/in/aayush-vyas-jsx/" target="_blank">
-                  <LuLinkedin size={24}/>
+                <a
+                  href="https://www.linkedin.com/in/aayush-vyas-jsx/"
+                  target="_blank"
+                >
+                  <LuLinkedin size={24} />
                 </a>
                 {/* <a href="#" target="_blank">
                   <Twitter />
@@ -108,7 +101,9 @@ export const ContactSection = () => {
                 <a href="#" target="_blank">
                   <Twitch />
                 </a> */}
-                <a href="https://github.com/av109" target="_blank"><LuGithub size={24} /> </a>
+                <a href="https://github.com/av109" target="_blank">
+                  <LuGithub size={24} />{" "}
+                </a>
               </div>
             </div>
           </div>
@@ -119,7 +114,11 @@ export const ContactSection = () => {
           >
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6">
+            <form
+              className="space-y-6"
+              action="https://formspree.io/f/mjkryyer"
+              method="POST"
+            >
               <div>
                 <label
                   htmlFor="name"
