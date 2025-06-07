@@ -30,6 +30,16 @@ const projects = [
     demoUrl: "https://github.com/av109/ad-detection-bypass",
     githubUrl: "https://github.com/av109/ad-detection-bypass",
   },
+  {
+    id: 4,
+    title: "Restaurant Frontend",
+    description:
+      "Frontend making of Responsive Landing page for a Restaurant",
+    image: "/projects/Restaurant.png",
+    tags: ["Reactjs", "Javascript", "Css"],
+    demoUrl: "https://av109.github.io/restaurant-frontend/",
+    githubUrl: "https://github.com/av109/restaurant-frontend",
+  },
 ];
 
 export const ProjectsSection = () => {
